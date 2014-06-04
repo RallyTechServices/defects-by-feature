@@ -12,7 +12,7 @@ append "?wsapiVersion=1.43" to the sdk link in the App.html file or the App-debu
 
 in the debug app:
 
-    <script type="text/javascript" src="https://audemo.rallydev.com/apps/2.0p5/sdk-debug.js?wsapiVersion=1.43"></script>
+    <script type="text/javascript" src="https://testme.rallydev.com/apps/2.0p5/sdk-debug.js?wsapiVersion=1.43"></script>
 
 This is only necessary when you rebuild, because the rebuilder will overrite the setting.
 
