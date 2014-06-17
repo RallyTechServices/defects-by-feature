@@ -16,6 +16,7 @@ Ext.define('CustomApp', {
             listeners: {
                 scope: this,
                 click: function(){
+                    this.down('#display_box').removeAll();
                     this._showFeatureChooser();
                 }
             }
@@ -88,6 +89,7 @@ Ext.define('CustomApp', {
         this.grid = this.down('#display_box').add({
             xtype: 'rallygrid',
             store: defect_store,
+            padding: 10,
             columnCfgs: [
                 { dataIndex:'FormattedID', text: 'id' },
                 { dataIndex:'State', text: 'State' },
@@ -97,7 +99,7 @@ Ext.define('CustomApp', {
                         if ( value ) {
                             display_value = value._refObjectName;
                         }
-                        return display_value 
+                        return display_value ;
                     }
                 },
                 { dataIndex: 'Severity', text: 'Severity' },
